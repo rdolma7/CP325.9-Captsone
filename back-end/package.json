@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/rdolma7/CP325.9-Captsone/issues"
   },
-  "homepage": "https://github.com/rdolma7/CP325.9-Captsone#readme"
+  "homepage": "https://github.com/rdolma7/CP325.9-Captsone#readme",
+  "dependencies": {
+    "express": "^5.1.0",
+    "mongoose": "^8.16.3"
+  }
 }
