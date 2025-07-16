@@ -16,6 +16,14 @@ app.get('/', (req,res)=>{
 res.json("Testing!")
 })
 
+// app.get('/child', (req,res)=>{
+
+// })
+
+// app.get('/parent', (req,res)=>{
+
+// })
+
 app.listen(port, ()=>{
     console.log(`Server is running on port: ${port}`)
 })
