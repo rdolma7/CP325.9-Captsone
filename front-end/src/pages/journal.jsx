@@ -1,7 +1,8 @@
+import NavBar from "../components/NavBar";
 function Journal() {
     return (
         <>  
-        {/* <label>Journal Entry</label> */}
+        <NavBar />
         <h2>Journal Entry</h2>
         <textarea name="entry" id="journalEntry"></textarea>
         <button>Share</button>

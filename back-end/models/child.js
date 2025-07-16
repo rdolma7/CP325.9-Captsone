@@ -10,6 +10,10 @@ const childSchema = new mongoose.Schema(
             type: String, 
             required: true,
         },
+        parent:{
+            type:Boolean,
+            required: true,
+        }
         
     }
 );

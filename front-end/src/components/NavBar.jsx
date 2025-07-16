@@ -1,5 +1,7 @@
 import React from "react";
 import '../NavBar.css'
+import { Link } from "react-router-dom";
+import Journal from "../pages/journal";
 
 function NavBar() {
   return (
@@ -9,7 +11,7 @@ function NavBar() {
       <div className="navbar-center">
         <ul className="nav-links">
           <li>
-            <a href="/journal">Journal Entry</a>
+            <Link to="/journal">Journal Entry</Link>
           </li>
           <li>
             <a href="/unwind">Unwind</a>

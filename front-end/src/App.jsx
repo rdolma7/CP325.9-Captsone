@@ -3,14 +3,20 @@ import './App.css'
 import Login from './components/Login'
 import Journal from './pages/journal'
 import NavBar from './components/NavBar'
+import Unwind from './pages/unwind'
+import { Route, Routes, Navigate } from 'react-router-dom'
 
 function App() {
 
   return (
-    <>
-      {/* <Login /> */}
-      <NavBar />
-    </>
+    <Routes>
+      <Route path='/' element={<Navigate to='/login' />}/>
+      <Route path='/login' element={<Login />}/>
+      <Route path='/journal' element={<Journal />}/>
+      <Route path='/unwind' element={<Unwind />}/>
+
+        {/* <NavBar />  */}
+    </Routes>
   )
 }
 
