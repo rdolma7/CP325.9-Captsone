@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,6 +19,7 @@
   },
   "homepage": "https://github.com/rdolma7/CP325.9-Captsone#readme",
   "dependencies": {
+    "dotenv": "^17.2.0",
     "express": "^5.1.0",
     "mongoose": "^8.16.3"
   }
