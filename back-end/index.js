@@ -1,7 +1,8 @@
 import express from "express"
 import 'dotenv/config'
 import mongoose from "mongoose"
-import Child from "./models/child.js"
+import child from "./models/child.js"
+import parent from "./models/parent.js"
 
 const app = express()
 const port = 3000
