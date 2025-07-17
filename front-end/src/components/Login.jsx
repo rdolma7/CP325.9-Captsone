@@ -36,8 +36,8 @@ function Login() {
           Signup
         </button>
       </div>
-      <div className={`form_Selected ${isLoggedIn ? "form_Selected2": ""}`}> {/* Ternary */}
-        <div className="loginForm">
+      <div >
+        <div className={`loginForm ${isLoggedIn ? "loginForm2": ""}`}>
           <h1>Login</h1>
           <label className="label">Email: </label>
           <input
