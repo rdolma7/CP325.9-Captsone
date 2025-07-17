@@ -21,3 +21,20 @@
   padding: 20px;
 }
 
+.loginForm, .signUpForm{
+  border: 3px solid black;
+  background-color: paleturquoise;
+  /* width: 100vw;
+  height: 100vh; */
+  text-align: center;
+}
+.label{
+  margin-left:10px
+}
+.form_Selected{
+  color: red
+}
+
+.form_Selected2{
+color: greenyellow
+}

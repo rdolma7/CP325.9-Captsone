@@ -14,7 +14,7 @@ function NavBar() {
             <Link to="/journal">Journal Entry</Link>
           </li>
           <li>
-            <a href="/unwind">Unwind</a>
+           <Link to="/unwind">Unwind</Link>
           </li>
           <li>
             <a href="/about">About Us</a>
