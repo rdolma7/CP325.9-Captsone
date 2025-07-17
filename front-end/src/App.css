@@ -32,9 +32,11 @@
   margin-left:10px
 }
 .form_Selected{
-  color: red
+  color: red;
+  
 }
 
 .form_Selected2{
-color: greenyellow
+color: greenyellow;
+display:none
 }
