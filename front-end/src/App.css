@@ -1,13 +1,3 @@
-/* #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-  border: 3px solid black;
-  background-color: rgb(14, 141, 184);
-  width: 100vw;
-  height: 100vh;
-} */
 
 body{
   background-color: antiquewhite;
@@ -19,8 +9,8 @@ body{
   margin-bottom: 10px;
 }
 #journalEntry {
-  width: 100vw;
-  height: 100vh;
+  width: 75vw;
+  height: 50vh;
   position: relative;
   border: 3px solid black;
   background-color: aquamarine;
@@ -40,25 +30,7 @@ body{
 .label {
   margin-left: 10px;
 }
-.form_Selected {
-  color: red;
-  height: 500px;
-  width: 1000px;
-  padding: 20px 0;
-  display: flex;
-  position: relative;
-  transition: all 0.5s ease-in-out;
-  left: 0px;
-}
 
-.form_Selected2 {
-  color: greenyellow;
-}
-
-.loginForm2{
-display:none;
-
-}
 h3{
   color: rgb(179, 120, 11);
   text-align: center;
@@ -69,11 +41,15 @@ h3{
 }
 .beach-img{
   padding-top: 20px;
-  width: 100vw
+  width: 75vw
 }
 .userForm{
   padding-top: 20px;
   display: flex;
   width: 100%;
   height: 50vh;
+}
+.homePage{
+  width: 100vw;
+  height: 100vh
 }

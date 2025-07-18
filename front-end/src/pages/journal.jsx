@@ -5,7 +5,8 @@ function Journal() {
         <NavBar />
         <h2>Journal Entry</h2>
         <textarea name="entry" id="journalEntry"></textarea>
-        <button>Share</button>
+        <br />
+        <button className="btnJournal">Share</button>
         </>
       );
 }

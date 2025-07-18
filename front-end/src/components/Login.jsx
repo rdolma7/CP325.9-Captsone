@@ -23,7 +23,7 @@ function Login() {
 
   const handleClick = (event) => {
     event.preventDefault();
-    navigate("/unwind");
+    navigate("/home");
   };
   return (
     <>
