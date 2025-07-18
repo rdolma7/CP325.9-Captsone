@@ -9,6 +9,7 @@ import { Route, Routes, Navigate } from 'react-router-dom'
 function App() {
 
   return (
+    <>
     <Routes>
       <Route path='/' element={<Login />}/>
       <Route path='/journal' element={<Journal />}/>
@@ -16,6 +17,8 @@ function App() {
 
         {/* <NavBar />  */}
     </Routes>
+
+    </>
   )
 }
 

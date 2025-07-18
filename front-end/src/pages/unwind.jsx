@@ -24,11 +24,12 @@ function Unwind() {
           <li onClick={()=>handleItemClick('Option 1')}>Happy</li>
           <li onClick={()=>handleItemClick('Option 2')}>Sad</li>
           <li onClick={()=>handleItemClick('Option 3')}>Guilty</li>
-          <li onClick={()=>handleItemClick('Option 4')}>Love</li>
-          <li onClick={()=>handleItemClick('Option 5')}>Loneliness</li>
+          <li onClick={()=>handleItemClick('Option 4')}>Anxious</li>
+          <li onClick={()=>handleItemClick('Option 5')}>Lonely</li>
         </ul>
       )}
       </div>
+      <img className="beach-img" src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExMzZzdWs5aGxwNWFrcXBwd3A1cDY4NmY4NHJ4MHBnNTlxZTB0NTRxaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/YTEQrKe1bBPcDdKKtA/giphy.gif" alt="beach" />
     </div>
   );
 }
