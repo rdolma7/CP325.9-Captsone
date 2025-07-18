@@ -4,6 +4,7 @@ import { useState } from "react";
 import BackgroundMusicPlayer from "../components/BackgroundMusic";
 
 function Unwind() {
+  const [volume, setVolume] = useState(0.1)
   const [isOpen, setIsOpen]=useState(false);
   const [selectedItem, setSelectedItem]=useState("How are you feeling today?")
   const toggleDropDown =()=>{
@@ -14,7 +15,13 @@ function Unwind() {
     setIsOpen(false);
   })
 
- 
+
+  const handleChange = (e) => {
+    console.log(e.target.value)
+    setVolume(e.target.value)
+  }
+
+ console.log(volume)
   return (
     <>
     <div className="unwind">
@@ -38,7 +45,9 @@ function Unwind() {
       )}
       </div>
       <img className="beach-img" src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExMzZzdWs5aGxwNWFrcXBwd3A1cDY4NmY4NHJ4MHBnNTlxZTB0NTRxaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/YTEQrKe1bBPcDdKKtA/giphy.gif" alt="beach" />
-      <BackgroundMusicPlayer/>
+      <BackgroundMusicPlayer volume={volume}/>
+      <input type="range" onChange={handleChange} value={volume} min='0' max='100' />
+    
     </div>
     </>
   );
