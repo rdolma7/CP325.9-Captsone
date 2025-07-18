@@ -1,17 +1,24 @@
  import { useEffect, useState } from 'react';
  import useSound from 'use-sound'
- import myBackgroundMusic from '../mp3/peaceful.mp3'
+ import myBackgroundMusic from '../mp3/jazz.mp3'
  const BackgroundMusicPlayer =({ volume })=>{
 
-    volume = Number(volume) / 100
+    volume = Number(volume) 
 
-    const [play] = useSound(myBackgroundMusic, {loop: true, volume: volume});
+    const [play, {sound}] = useSound(myBackgroundMusic, {loop: true, volume: Number(volume)});
     useEffect(()=>{
-      play()
-      }, [play]);
+        play();
+    }, [play]);
 
+    useEffect(()=>{
+        if(sound){
+            sound.volume(Number(volume));
+        }
+    }, [sound, volume]);
+  
      return (
-        <div></div>
+        <>  
+        </>
      )
     
   }
