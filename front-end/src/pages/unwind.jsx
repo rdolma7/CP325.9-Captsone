@@ -23,15 +23,15 @@ function Unwind() {
         <div className="dropdown-container">
           <>
             <label className="dropdown-menu">{selectedItem}</label>
-            <select className="feelingDropdown" required>
+            <select required>
               <option disabled selected hidden>
                 Please select one
               </option>
-              <option value="happy">Happy</option>
-              <option value="sad">Sad</option>
-              <option value="guilty">Guilty</option>
-              <option value="anxious">Anxious</option>
-              <option value="lonely">Lonely</option>
+              <option className="feelingDropdown" value="happy">Happy</option>
+              <option className="feelingDropdown" value="sad">Sad</option>
+              <option className="feelingDropdown" value="guilty">Guilty</option>
+              <option className="feelingDropdown" value="anxious">Anxious</option>
+              <option className="feelingDropdown" value="lonely">Lonely</option>
             </select>
           </>
         </div>
