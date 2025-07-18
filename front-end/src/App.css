@@ -8,6 +8,10 @@
   width: 100vw;
   height: 100vh;
 } */
+
+body{
+  background-color: antiquewhite;
+}
 .email,
 .password,
 .button,
@@ -28,9 +32,10 @@
 .signUpForm {
   border: 3px solid black;
   background-color: paleturquoise;
-  /* width: 100vw;
-  height: 100vh; */
+  width: 100%;
+  height: 100%;
   text-align: center;
+  margin: 0 10px;
 }
 .label {
   margin-left: 10px;
@@ -51,18 +56,24 @@
 }
 
 .loginForm2{
-display:none
+display:none;
+
 }
 h3{
   color: rgb(179, 120, 11);
   text-align: center;
 }
 .unwind{
-  background-color: paleturquoise;
   width: 100vw;
   height: 100vh;
 }
 .beach-img{
   padding-top: 20px;
   width: 100vw
+}
+.userForm{
+  padding-top: 20px;
+  display: flex;
+  width: 100%;
+  height: 50vh;
 }
