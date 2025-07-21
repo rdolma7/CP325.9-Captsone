@@ -1,8 +1,8 @@
 import express from "express"
 import 'dotenv/config'
 import mongoose from "mongoose"
-import child from "./models/child.js"
-import parent from "./models/parent.js"
+import journal from "./models/journal.js"
+
 
 const app = express()
 const port = 3000
@@ -16,9 +16,9 @@ app.get('/', (req,res)=>{
 res.json("Testing!")
 })
 
-// app.get('/child', (req,res)=>{
+app.get('/journal', (req,res)=>{
 
-// })
+})
 
 // app.get('/parent', (req,res)=>{
 

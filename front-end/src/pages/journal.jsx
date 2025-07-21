@@ -6,7 +6,7 @@ function Journal() {
         <h2>Journal Entry</h2>
         <textarea name="entry" id="journalEntry"></textarea>
         <br />
-        <button className="btnJournal">Share</button>
+        <button className="btnJournal">Save</button>
         </>
       );
 }
