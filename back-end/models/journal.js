@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const parentSchema = new mongoose.Schema({
+const journalSchema = new mongoose.Schema({
   name: {
     type: String,
     required: true,
@@ -11,4 +11,4 @@ const parentSchema = new mongoose.Schema({
   },
 });
 
-export default mongoose.model("Parent", parentSchema, "parents");
+export default mongoose.model("Journal", journalSchema, "journals");
