@@ -14,6 +14,10 @@ function About() {
 
       <br />
       <img className="abtImages" src="../src/images/city.jpg" alt="" />
+      <br />
+      <p>"The only impossible journey is the one you never begin." </p>
+
+      <img className="abtImages" src="../src/images/anime.jpg" alt="anime" />
     </>
   );
 }

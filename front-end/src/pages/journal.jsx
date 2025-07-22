@@ -3,21 +3,23 @@ import NavBar from "../components/NavBar";
 function Journal() {
   const [entry, setEntry] = useState("");
   const [name, setName] = useState("");
- 
+
   async function handleSave(event) {
     event.preventDefault;
     try {
-      const response = await fetch("http://localhost:3000/journals", {
+      const response = await fetch("http://localhost:3000/journal", {
         method: "POST",
         headers: { "content-type": "application/json" },
         body: JSON.stringify({
-          content:entry,
-          name:name,
-        })
+          content: entry,
+          name: name,
+        }),
       });
-       setEntry("")
-       setName("")
-    } catch (error) {}
+      setEntry("");
+      setName("");
+    } catch (error) {
+      res.status(500).json({ error: error.message });
+    }
   }
   return (
     <>
@@ -28,6 +30,7 @@ function Journal() {
         type="name"
         onChange={(event) => setName(event.target.value)}
         value={name}
+        className="journalName"
       />
       <textarea
         value={entry}
@@ -36,8 +39,9 @@ function Journal() {
         id="journalEntry"
       ></textarea>
       <br />
-      <button onClick={handleSave} className="btnJournal">Save</button>
-     
+      <button onClick={handleSave} className="btnJournal">
+        Save
+      </button>
     </>
   );
 }
