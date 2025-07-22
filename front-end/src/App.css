@@ -54,8 +54,8 @@ h3 {
 }
 .beach-img {
   padding-top: 20px;
-  width: 50vw;
-  height: 50vh;
+  width: 300px;
+  height: 200px;
 }
 .userForm {
   padding-top: 20px;
@@ -92,4 +92,15 @@ p {
   background-image: linear-gradient(rgb(67, 130, 128),
     rgb(158, 215, 120));
     font-style: italic;
+}
+.allEntries{
+  margin-top: 20px;
+ background-image: linear-gradient(to right, rgb(182, 180, 105),rgb(171, 198, 153), rgb(45, 114, 90));
+  font-size: 20pt;
+
+}
+
+.beach{
+  margin-top: 20px;
+  width: 800px;
 }

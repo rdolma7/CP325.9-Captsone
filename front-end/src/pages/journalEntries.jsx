@@ -14,11 +14,20 @@ function JournalEntries() {
   return (
     <>
       <NavBar />
+      <div className="allEntries">
       {journals.map((journal) => (
         <div>
-          {journal.name} {journal.content}{" "}
+         <table>
+          <tr>
+         <td>{journal.name}
+         {journal.content}
+         </td>
+         </tr>  
+         </table>
         </div>
       ))}
+      </div>
+
     </>
   );
 }

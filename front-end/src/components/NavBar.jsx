@@ -15,13 +15,13 @@ function NavBar() {
             <Link to="/journal">Journal Entry</Link>
           </li>
           <li>
-            <Link to="/entries">All Entries</Link>
-          </li>
-          <li>
             <Link to="/unwind">Unwind</Link>
           </li>
           <li>
             <Link to="/about-us">About Us</Link>
+          </li>
+          <li>
+            <Link to="/entries">All Entries</Link>
           </li>
         </ul>
       </div>

@@ -73,8 +73,8 @@ function Unwind() {
             ></iframe>
           ) : (
             <img
-              className="beach-img"
-              src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExMzZzdWs5aGxwNWFrcXBwd3A1cDY4NmY4NHJ4MHBnNTlxZTB0NTRxaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/YTEQrKe1bBPcDdKKtA/giphy.gif"
+              className="beach"
+              src="../src/images/calm.gif"
               alt="beach"
             />
           )}
@@ -90,6 +90,9 @@ function Unwind() {
           max="100"
         />
       </div>
+      <img className="beach-img"  src="../src/images/sunset.jpg" alt="" />
+      <img className="beach-img" src="../src/images/bridge.jpg" alt="" />
+      <img className="beach-img" src="../src/images/painting.jpg" alt="" />
       </div>
     </>
   );
