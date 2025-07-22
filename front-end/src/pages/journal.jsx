@@ -32,6 +32,7 @@ function Journal() {
         value={name}
         className="journalName"
       />
+      <br />
       <textarea
         value={entry}
         onChange={(event) => setEntry(event.target.value)}

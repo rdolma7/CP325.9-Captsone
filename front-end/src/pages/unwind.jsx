@@ -35,7 +35,7 @@ function Unwind() {
         <h3>Time to Unwind and Relax</h3>
         <div className="dropdown-container">
           <form onSubmit={handleClick} className="dropdown-form">
-            <label htmlFor="feeling">How are you feeeling today?</label>
+            <label htmlFor="feeling" className="labelUnwind">How are you feeeling today?</label>
             <select
               onChange={(event) => setSelectedItem(event.target.value)}
               required

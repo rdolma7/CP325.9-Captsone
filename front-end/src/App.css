@@ -1,9 +1,9 @@
 body {
   background-image: linear-gradient(
     to right,
-    rgb(138, 122, 126),
-    rgb(222, 192, 192),
-    rgb(242, 237, 241)
+    rgb(193, 89, 115),
+    rgb(192, 142, 142),
+    rgb(159, 110, 149)
   );
 }
 .email,
@@ -13,11 +13,11 @@ body {
   margin-bottom: 10px;
 }
 #journalEntry {
-  width: 75vw;
-  height: 50vh;
+  width: 7vw;
+  height: 35vh;
   position: relative;
   border: 3px solid black;
-  background-color: rgb(145, 72, 50);
+  background-color: rgb(130, 188, 208);
   border-radius: 10px;
   padding: 20px;
   font-size: 20pt;
@@ -26,7 +26,12 @@ body {
 .loginForm,
 .signUpForm {
   border: 3px solid black;
-  background-color: paleturquoise;
+  background-image: linear-gradient(
+    to right,
+    rgb(193, 89, 115),
+    rgb(158, 215, 120),
+    rgb(63, 94, 51)
+  );
   width: 100%;
   height: 100%;
   text-align: center;
@@ -58,9 +63,10 @@ h3 {
   height: 50vh;
 }
 .homePage {
-  width: 100vw;
-  height: 100vh;
-  display:grid
+  width: 75vw;
+  height: 75vh;
+  display: grid;
+  margin-top:20px
 }
 .feelingDropdown {
   background-color: rgb(177, 163, 125);
@@ -74,6 +80,15 @@ p {
   width: 25vw;
 }
 
-.journalName{
+.journalName {
   margin-bottom: 30px;
+}
+.btnJournal{
+  margin-top:20px
+}
+.labelUnwind{
+  font-size: 15pt;
+  background-image: linear-gradient(rgb(67, 130, 128),
+    rgb(158, 215, 120));
+    font-style: italic;
 }
