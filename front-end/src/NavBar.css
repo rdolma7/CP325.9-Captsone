@@ -1,24 +1,22 @@
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-}
-
-.navbar-center .nav-links {
+.nav-links {
   list-style-type: none;
   display: flex;
   margin: 0;
   padding: 0;
+  color: black
 }
 
-.navbar-center .nav-links li {
-  margin-right: 1rem;
-}
-
-
-.navbar-right {
+.navbar-center {
   display: flex;
-  align-items: center;
+  justify-content: center;
+  background-color: rgb(86, 120, 168);
+  height: 75px;
+  font-size: 20pt;
+  color: black;
+  padding-top: 25px
+}
+
+li {
+  margin-right: 5rem;
 }
 

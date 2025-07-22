@@ -67,7 +67,7 @@ h3 {
   width: 75vw;
   height: 75vh;
   display: grid;
-  margin-top:20px
+  margin-top: 20px;
 }
 .feelingDropdown {
   background-color: rgb(177, 163, 125);
@@ -84,23 +84,31 @@ p {
 .journalName {
   margin-bottom: 30px;
 }
-.btnJournal{
-  margin-top:20px
-}
-.labelUnwind{
-  font-size: 15pt;
-  background-image: linear-gradient(rgb(67, 130, 128),
-    rgb(158, 215, 120));
-    font-style: italic;
-}
-.allEntries{
+.btnJournal {
   margin-top: 20px;
- background-image: linear-gradient(to right, rgb(182, 180, 105),rgb(171, 198, 153), rgb(45, 114, 90));
+}
+.labelUnwind {
+  font-size: 15pt;
+  background-image: linear-gradient(rgb(67, 130, 128), rgb(158, 215, 120));
+  font-style: italic;
+}
+.allEntries {
+  margin-top: 20px;
+  background-image: linear-gradient(
+    to right,
+    rgb(81, 135, 140),
+    rgb(171, 198, 153),
+    rgb(45, 114, 90)
+  );
   font-size: 20pt;
-
+  padding: 5px;
 }
 
-.beach{
+.beach {
   margin-top: 20px;
   width: 800px;
+}
+
+.tableEntries {
+  padding: 5px;
 }

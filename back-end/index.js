@@ -54,7 +54,7 @@ app.delete("/journals/:id", async (req, res) => {
   try {
     const { id } = req.params;
     const journal = await Journal.findByIdAndDelete(id);
-    if (!journal) {
+    if (!journal) {  /*If the entry is not found with that Id, it should throw this error */
       return res.status(404).json({ message: `Journal ${id} not found` });
     }
   } catch (error) {

@@ -4,8 +4,6 @@ import { Link } from "react-router-dom";
 
 function NavBar() {
   return (
-    <nav className="navBar">
-      <div className="navbar-left"></div>
       <div className="navbar-center">
         <ul className="nav-links">
           <li>
@@ -25,7 +23,6 @@ function NavBar() {
           </li>
         </ul>
       </div>
-    </nav>
   );
 }
 
