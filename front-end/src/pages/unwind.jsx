@@ -75,27 +75,27 @@ function Unwind() {
             ></iframe>
           ) : (
             <div>
-          <img className="beach" src="../src/images/calm.gif" alt="beach" />
-        <BackgroundMusicPlayer volume={volume} />
-        <div className="volume-control">
-          <label htmlFor="volume">
-            Sound Volume <volume></volume>
-          </label>
-          <input
-            type="range"
-            onChange={handleChange}
-            value={volume * 100}
-            min="0"
-            max="100"
-          />
-        </div>
-        </div>
+              <img className="beach" src="calm.gif" alt="beach" />
+              <BackgroundMusicPlayer volume={volume} />
+              <div className="volume-control">
+                <label htmlFor="volume">
+                  Sound Volume <volume></volume>
+                </label>
+                <input
+                  type="range"
+                  onChange={handleChange}
+                  value={volume * 100}
+                  min="0"
+                  max="100"
+                />
+              </div>
+            </div>
           )}
         </div>
 
-        <img className="beach-img" src="../src/images/sunset.jpg" alt="" />
-        <img className="beach-img" src="../src/images/bridge.jpg" alt="" />
-        <img className="beach-img" src="../src/images/painting.jpg" alt="" />
+        <img className="beach-img" src="sunset.jpg" alt="" />
+        <img className="beach-img" src="bridge.jpg" alt="" />
+        <img className="beach-img" src="painting.jpg" alt="" />
       </div>
     </>
   );
