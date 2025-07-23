@@ -16,7 +16,7 @@ function NavBar() {
             <Link to="/unwind">Unwind</Link>
           </li>
           <li>
-            <Link to="/about-us">About Us</Link>
+            <Link to="/feelings">Feelings</Link>
           </li>
           <li>
             <Link to="/entries">All Entries</Link>

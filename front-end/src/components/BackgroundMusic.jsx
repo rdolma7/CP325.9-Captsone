@@ -2,25 +2,33 @@ import { useEffect, useState } from "react";
 import useSound from "use-sound";
 import myBackgroundMusic from "../mp3/jazz.mp3";
 const BackgroundMusicPlayer = ({ volume }) => {
-  volume = Number(volume);
+  const [selected, setSelected] = useState(false);
 
   const [play, { sound }] = useSound(myBackgroundMusic, {
     loop: true,
     volume: Number(volume),
+    soundEnabled: selected,
   });
   useEffect(() => {
-    play();
-    return () => {
-      stop();
-    };
-  }, [play]);
+    if (selected) {
+      play();
+    }
+  }, [selected, play]);
 
   useEffect(() => {
-    if (sound) {
-      sound.volume(Number(volume));
-    }
-  }, [sound, volume]);
+    return () => {
+      if (sound) {
+        sound.stop();
+      }
+    };
+  }, [sound]);
 
-  return <></>;
+  return (
+    <>
+      {!selected && (
+        <button onClick={() => setSelected(true)}>Play Background Music</button>
+      )}
+    </>
+  );
 };
 export default BackgroundMusicPlayer;
