@@ -74,9 +74,8 @@ function Unwind() {
               allowFullScreen
             ></iframe>
           ) : (
-            <img className="beach" src="../src/images/calm.gif" alt="beach" />
-          )}
-        </div>
+            <div>
+          <img className="beach" src="../src/images/calm.gif" alt="beach" />
         <BackgroundMusicPlayer volume={volume} />
         <div className="volume-control">
           <label htmlFor="volume">
@@ -89,6 +88,9 @@ function Unwind() {
             min="0"
             max="100"
           />
+        </div>
+        </div>
+          )}
         </div>
 
         <img className="beach-img" src="../src/images/sunset.jpg" alt="" />

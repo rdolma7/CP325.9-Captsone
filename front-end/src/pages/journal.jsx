@@ -1,5 +1,7 @@
 import { useState } from "react";
 import NavBar from "../components/NavBar";
+
+const BASE_URL=import.meta.env.VITE_BASE_URL
 function Journal() {
   const [entry, setEntry] = useState("");
   const [name, setName] = useState("");
@@ -7,7 +9,7 @@ function Journal() {
   async function handleSave(event) {
     event.preventDefault;
     try {
-     await fetch("http://localhost:3000/journal", {
+     await fetch(BASE_URL+ "/journal", {
         method: "POST",
         headers: { "content-type": "application/json" },
         body: JSON.stringify({

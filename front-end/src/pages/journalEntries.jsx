@@ -1,13 +1,15 @@
 import { useEffect, useState } from "react";
 import NavBar from "../components/NavBar";
 
+const BASE_URL=import.meta.env.VITE_BASE_URL
+
 function JournalEntries() {
   const [journals, setJournals] = useState([]);
   useEffect(() => {
     getData();
   }, []);
   async function getData() {
-    const response = await fetch("http://localhost:3000/journal");
+    const response = await fetch(BASE_URL+ "/journal");
     const data = await response.json();
     setJournals(data);
   }
