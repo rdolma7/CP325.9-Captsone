@@ -5,9 +5,9 @@ function Home() {
         <>  
         <NavBar />
         <div className="homePage"> 
-        <img src='./images/journal.jpg' alt="screenshots" />
-        <img src= './images/unwind.jpg' alt="screenshots" />
-        <img src= './images/about-us.jpg' alt="screenshots" />
+        <img src='journal.jpg' alt="screenshots" />
+        <img src= 'unwind.jpg' alt="screenshots" />
+        <img src= 'about-us.jpg' alt="screenshots" />
         </div>
         </>
       );
