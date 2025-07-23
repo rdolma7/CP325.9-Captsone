@@ -9,7 +9,7 @@
 .navbar-center {
   display: flex;
   justify-content: center;
-  background-color: rgb(86, 120, 168);
+  /* background-color: rgb(168, 134, 86); */
   height: 75px;
   font-size: 20pt;
   color: black;
@@ -19,4 +19,5 @@
 li {
   margin-right: 5rem;
 }
+
 

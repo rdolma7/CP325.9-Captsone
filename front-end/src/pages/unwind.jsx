@@ -35,7 +35,9 @@ function Unwind() {
         <h3>Time to Unwind and Relax</h3>
         <div className="dropdown-container">
           <form onSubmit={handleClick} className="dropdown-form">
-            <label htmlFor="feeling" className="labelUnwind">How are you feeeling today?</label>
+            <label htmlFor="feeling" className="labelUnwind">
+              How are you feeeling today?
+            </label>
             <select
               onChange={(event) => setSelectedItem(event.target.value)}
               required
@@ -72,27 +74,26 @@ function Unwind() {
               allowFullScreen
             ></iframe>
           ) : (
-            <img
-              className="beach"
-              src="../src/images/calm.gif"
-              alt="beach"
-            />
+            <img className="beach" src="../src/images/calm.gif" alt="beach" />
           )}
         </div>
         <BackgroundMusicPlayer volume={volume} />
-            <div className="volume-control">
-              <label htmlFor="volume">Sound Volume <volume></volume></label>
-        <input
-          type="range"
-          onChange={handleChange}
-          value={volume * 100}
-          min="0"
-          max="100"
-        />
-      </div>
-      <img className="beach-img"  src="../src/images/sunset.jpg" alt="" />
-      <img className="beach-img" src="../src/images/bridge.jpg" alt="" />
-      <img className="beach-img" src="../src/images/painting.jpg" alt="" />
+        <div className="volume-control">
+          <label htmlFor="volume">
+            Sound Volume <volume></volume>
+          </label>
+          <input
+            type="range"
+            onChange={handleChange}
+            value={volume * 100}
+            min="0"
+            max="100"
+          />
+        </div>
+
+        <img className="beach-img" src="../src/images/sunset.jpg" alt="" />
+        <img className="beach-img" src="../src/images/bridge.jpg" alt="" />
+        <img className="beach-img" src="../src/images/painting.jpg" alt="" />
       </div>
     </>
   );
