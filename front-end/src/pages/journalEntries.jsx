@@ -5,6 +5,7 @@ const BASE_URL=import.meta.env.VITE_BASE_URL
 
 function JournalEntries() {
   const [journals, setJournals] = useState([]);
+  /* this useEffect will run the getData function as long as there's a change on the page */
   useEffect(() => {
     getData();
   }, []);

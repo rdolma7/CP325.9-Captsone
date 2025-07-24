@@ -3,7 +3,9 @@ import React from "react";
 import { useState } from "react";
 import BackgroundMusicPlayer from "../components/BackgroundMusic";
 
-function Unwind() {
+
+
+function Unwind() {  
   const [volume, setVolume] = useState(0.10);
 
   return (
@@ -14,6 +16,7 @@ function Unwind() {
 
         <div>
           <img className="beach" src="calm.gif" alt="beach" /><br />
+          {/* volume is being passed as a prop */}
           <BackgroundMusicPlayer volume={volume} />
         </div>
 

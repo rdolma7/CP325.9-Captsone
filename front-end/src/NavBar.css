@@ -17,7 +17,7 @@
   font-size: 20pt;
   color: black;
   padding-top: 25px;
-  background-color:#a5a7cc ;
+  background-color:#a9ace0 ;
 }
  
 .navlinks li a{
@@ -27,7 +27,8 @@
   transition: color 0.3s ease;
 }
 .navLinks li a:hover{
-  color: #0077cc
+  color: #0077cc;
+  
 }
 
 @media (max-width: 768px){

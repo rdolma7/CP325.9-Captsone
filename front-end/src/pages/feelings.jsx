@@ -6,7 +6,7 @@ function Feelings() {
   const [selectedItem, setSelectedItem] = useState("");
   const [moodData, setMoodData] = useState(null);
 
-  const moodMap = { /*moodMap  */
+  const moodMap = { /*moodMap  is an object inside of objects*/
     sad: {
       url: "https://www.youtube.com/embed/RUP-S0WhP6w",
       text: "Sadness, a common human emotion, can be profound and isolating, but also a source of strength and empathy.",

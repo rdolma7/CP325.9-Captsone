@@ -1,7 +1,7 @@
 import { useState } from "react";
 import NavBar from "../components/NavBar";
 
-const BASE_URL=import.meta.env.VITE_BASE_URL
+const BASE_URL = import.meta.env.VITE_BASE_URL;
 function Journal() {
   const [entry, setEntry] = useState("");
   const [name, setName] = useState("");
@@ -9,7 +9,7 @@ function Journal() {
   async function handleSave(event) {
     event.preventDefault;
     try {
-     await fetch(BASE_URL+ "/journal", {
+      await fetch(BASE_URL + "/journal", {
         method: "POST",
         headers: { "content-type": "application/json" },
         body: JSON.stringify({
@@ -17,7 +17,7 @@ function Journal() {
           name: name,
         }),
       });
-      setEntry("");
+      setEntry(""); /* this resets the content and name to blank*/
       setName("");
     } catch (error) {
       res.status(500).json({ error: error.message });
@@ -27,25 +27,25 @@ function Journal() {
     <>
       <NavBar />
       <div className="journalContainer">
-      <h2>Journal Entry</h2>
-      Name:{" "}
-      <input
-        type="name"
-        onChange={(event) => setName(event.target.value)}
-        value={name}
-        className="journalName"
-      />
-      <br />
-      <textarea
-        value={entry}
-        onChange={(event) => setEntry(event.target.value)}
-        name="entry"
-        id="journalEntry"
-      ></textarea>
-      <br />
-      <button onClick={handleSave} className="btnJournal">
-        Save
-      </button>
+        <h2>Journal Entry</h2>
+        Name:
+        <input
+          type="name"
+          onChange={(event) => setName(event.target.value)} /* this will set the name to what is entered in that field*/
+          value={name}
+          className="journalName"
+        />
+        <br />
+        <textarea
+          value={entry}
+          onChange={(event) => setEntry(event.target.value)} 
+          name="entry"
+          id="journalEntry"
+        ></textarea>
+        <br />
+        <button onClick={handleSave} className="btnJournal">
+          Save
+        </button>
       </div>
     </>
   );
