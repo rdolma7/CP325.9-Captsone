@@ -64,7 +64,7 @@ function Feelings() {
             {Object.keys(moodMap).map((mood) => (
             
               <option className="feelingDropdown" key={mood} value={mood}>
-                {mood.charAt(0).toUpperCase() + mood.slice(1)}
+                {mood} {/* this will load the mood dropdown */}
               </option>
          ) )}
           </select>
