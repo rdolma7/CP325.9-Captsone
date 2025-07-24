@@ -49,13 +49,14 @@ function Feelings() {
       <h3>Emotions</h3>
       <div className="dropdown-container">
         <form onSubmit={handleClick} className="dropdown-form">
-          <label htmlFor="feeling" className="labelUnwind">
+          <label htmlFor="feeling"  className="emotionSelection labelUnwind">
             How are you feeling today?
           </label>
           <select
             onChange={(event) => setSelectedItem(event.target.value)}
             required
             value={selectedItem}
+            className="emotionSelection"
           >
             <option disabled value="" hidden>
               Please select one
@@ -67,7 +68,7 @@ function Feelings() {
               </option>
          ) )}
           </select>
-          <button type="submit">Enter</button>
+          <button className="emotionSelection" type="submit">Enter</button>
         </form>
       </div>
       {moodData && (
