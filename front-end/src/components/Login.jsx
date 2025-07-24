@@ -27,6 +27,7 @@ function Login() {
   };
   return (
     <>
+    <div className="loginContainer">
       <div>
         <button
           onClick={() => {
@@ -91,6 +92,7 @@ function Login() {
             <button>Signup</button>
           </form>
         )}
+      </div>
       </div>
     </>
   );
