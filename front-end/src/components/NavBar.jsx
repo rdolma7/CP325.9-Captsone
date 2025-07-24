@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 
 function NavBar() {
   return (
-      <div className="navbar-center">
-        <ul className="nav-links">
+      <div className="navbarCenter">
+        <ul className="navLinks">
           <li>
             <Link to="/home">Home</Link>
           </li>

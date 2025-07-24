@@ -4,6 +4,7 @@ function Home() {
   return (
     <>
       <NavBar />
+      <div className="homeContainer">
      <h3>Welcome to Chill Zone</h3>
       <img className="abtImages" src="cat.jpg" alt="" />
       <p>
@@ -17,6 +18,7 @@ function Home() {
       <p>"The only impossible journey is the one you never begin." </p>
 
       <img className="abtImages" src="anime.jpg" alt="anime" />
+      </div>
     </>
   );
 }

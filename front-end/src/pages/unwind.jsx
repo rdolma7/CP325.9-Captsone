@@ -6,10 +6,6 @@ import BackgroundMusicPlayer from "../components/BackgroundMusic";
 function Unwind() {
   const [volume, setVolume] = useState(0.10);
 
-  const handleChange = (event) => {
-    setVolume(event.target.value / 100);
-  };
-
   return (
     <>
       <div className="unwind">
@@ -22,9 +18,12 @@ function Unwind() {
         </div>
 
       
-          <img className="beach-img" src="sunset.jpg" alt="" />
-          <img className="beach-img" src="bridge.jpg" alt="" />
-          <img className="beach-img" src="painting.jpg" alt="" />
+          <img className="beach-img" src="sunset.jpg" />
+          <img className="beach-img" src="bridge.jpg"  />
+          <img className="beach-img" src="painting.jpg"  />
+          <img className="beach-img" src="reflection.jpg"  />
+          <img className="beach-img" src="stones.jpg" />
+          <img className="beach-img" src="boat.jpg" />
         
       </div>
     </>
