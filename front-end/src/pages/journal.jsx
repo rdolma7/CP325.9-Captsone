@@ -26,6 +26,7 @@ function Journal() {
   return (
     <>
       <NavBar />
+      <div className="journalContainer">
       <h2>Journal Entry</h2>
       Name:{" "}
       <input
@@ -45,6 +46,7 @@ function Journal() {
       <button onClick={handleSave} className="btnJournal">
         Save
       </button>
+      </div>
     </>
   );
 }

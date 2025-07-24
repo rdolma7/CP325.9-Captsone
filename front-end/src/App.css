@@ -1,6 +1,6 @@
 body {
- background-color: #242A33;
-background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 400'%3E%3Cdefs%3E%3CradialGradient id='a' cx='396' cy='281' r='514' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23C3B7DD'/%3E%3Cstop offset='1' stop-color='%23242A33'/%3E%3C/radialGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='400' y1='148' x2='400' y2='333'%3E%3Cstop offset='0' stop-color='%23DEEBFF' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23DEEBFF' stop-opacity='0.5'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='800' height='400'/%3E%3Cg fill-opacity='0.5'%3E%3Ccircle fill='url(%23b)' cx='267.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='532.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='400' cy='30' r='300'/%3E%3C/g%3E%3C/svg%3E");
+ background-color: #071E33;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 400'%3E%3Cdefs%3E%3CradialGradient id='a' cx='396' cy='281' r='514' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23589CDD'/%3E%3Cstop offset='1' stop-color='%23071E33'/%3E%3C/radialGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='400' y1='148' x2='400' y2='333'%3E%3Cstop offset='0' stop-color='%231769FF' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%231769FF' stop-opacity='0.5'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='800' height='400'/%3E%3Cg fill-opacity='0.4'%3E%3Ccircle fill='url(%23b)' cx='267.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='532.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='400' cy='30' r='300'/%3E%3C/g%3E%3C/svg%3E");
 background-attachment: fixed;
 background-size: cover;
 }
@@ -56,12 +56,12 @@ h3 {
 .unwind {
   width: 100vw;
   height: 100vh;
+  text-align: center;
 }
 .beach-img {
   padding-top: 20px;
   width: 300px;
   height: 200px;
-  /* margin-right: 20px */
 }
 .userForm {
   padding-top: 20px;
@@ -94,24 +94,27 @@ p {
   display: block;
   margin-left: auto;
   margin-right:auto;
-  
-  /* margin: 1.5 rem auto;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1); */
 }
 
+.journalContainer{
+  text-align: center;
+  color: rgb(183, 207, 231);
+  text-decoration: wavy;
+  font-style: italic;
+}
 .journalName {
   margin-bottom: 30px;
 }
 .btnJournal {
   margin-top: 20px;
+  border-radius: 10px;
+  font-size: 15pt;
 }
 .labelUnwind {
   font-size: 15pt;
   background-image: linear-gradient(rgb(67, 130, 128), rgb(158, 215, 120));
   font-style: italic;
-  margin-right: 10px;
-  margin-left: 285px;
+  
 }
 .allEntries {
   margin-top: 20px;
@@ -149,4 +152,8 @@ color:rgb(78, 94, 236);
 .mediaDisplay{
   margin-top: 20px; text-align: center;
   ;
+}
+
+.feelingContainer{
+  text-align: center;
 }

@@ -45,6 +45,7 @@ function Feelings() {
   return (
     <>
       <NavBar />
+      <div className="feelingContainer">
       <h3>Emotions</h3>
       <div className="dropdown-container">
         <form onSubmit={handleClick} className="dropdown-form">
@@ -84,6 +85,7 @@ function Feelings() {
           <blockquote className="emotionText">{moodData.text}.</blockquote>
         </div>
       )}
+      </div>
     </>
   );
 }
