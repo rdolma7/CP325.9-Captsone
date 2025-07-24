@@ -10,7 +10,9 @@ background-size: cover;
 .name {
   background-color: beige;
   margin-bottom: 10px;
+  display: flex;
 }
+
 #journalEntry {
   width: 70vw;
   height: 35vh;
@@ -24,17 +26,18 @@ background-size: cover;
 
 .loginForm,
 .signUpForm {
-  border: 3px solid rgb(14, 186, 77);
+  border: 3px solid rgb(73, 78, 149);
   background-color: rgb(175, 178, 165);
-  padding-bottom: 10px;
+  padding-left: 25px;
   height: 400px;
   width: 300px;
+  border-radius: 15px;
 }
 .userForm{
   width: 100%;
   max-width: 400px;
   padding: 2rem;
-  border-radius: 12px;
+  /* border-radius: 12px; */
   /* box-shadow: 0 4px 12px rgba(0,0,0,0.1); */
 }
 .loginContainer{
@@ -43,7 +46,6 @@ flex-direction: column;
 align-items: center;
 justify-content: center;
 min-height: 100vh;
-
 }
 
 .label {
